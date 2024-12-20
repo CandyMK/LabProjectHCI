@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F3EDC8;
+}
+
+* {
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: none;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #7D0A0A;
+    box-shadow: 0px 4px 5.2px 0px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    padding-left: 3em;
+    margin: 0;
+}
+
+.header {
+    display: inline-block;
+    color: #EAD196;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.navbar nav {
+    text-align: right;
+    margin-left: auto;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li {
+    height: 45px;
+}
+
+nav a { 
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+nav a:hover{
+    color: #EAD196;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em auto;
+    z-index: 3;
+    top: 50%;
+    width: 70%;
+    line-height: 1.5;
+    position: relative;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    padding: 2em;
+    max-width: 800px; 
+    display: inline-block;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 200px; 
+}
+
+.intro h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAD196;
+    border: 3px solid #7D0A0A;
+    border-radius: 10px;
+    font-family: "Port Lligat Slab", serif;
+    color: #EAD196;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.26);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #7D0A0A;
+    padding: 0.5em;
+}
+
+.intro p {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 22px;
+    color: #7D0A0A;
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.rectangle {
+    display: inline-block;
+    padding: 2.5em;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    margin: 2em auto;
+    vertical-align: top;
+}
+
+.rectangle .star-logo {
+    display: inline-block;
+    margin-right: 10px;
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.best-seller h2, .best-recipe h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAD196;
+    border: 3px solid #7D0A0A;
+    border-radius: 40px;
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 0;
+    color: #7D0A0A;
+    padding: 0.5em;
+    margin: -1em -1em -1em -1em;
+}
+
+.item1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.item2 {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 5em;
+}
+
+.item1 img {
+    max-width: 140px;
+    margin-right: 2em;
+}
+
+.item2 img {
+    max-width: 200px;
+    margin-right: 2em;
+    border-radius: 10px;
+    border: 2px solid #7D0A0A;
+}
+
+.item1 p, .item2 p {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: #7D0A0A;
+    letter-spacing: 0;
+}
+
+.item1 img:hover, .item2 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: url("../asset/homePic.jpg");
+    background-size: cover; 
+    opacity: 0.25;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+.footer {
+    background-color: #7D0A0A;
+    box-shadow: 4px 0px 5.2px 5.2px rgba(0, 0, 0, 0.25);
+    padding: 1em 3em;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.left h1 {
+    display: inline;
+    color: #EAD196;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.left {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.right {
+    flex: 1;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+.middle-left {
+    flex: 1;
+    margin: 10px 100px;
+}
+
+.middle-right {
+    flex: 1;
+    margin: 10px 70px;
+}
+
+.left p, .middle-left h3, .middle-right h3, .right p {
+    margin-top: 0;
+}
+
+.left p {
+    font-family: "Port Lligat Slab", serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.right p {
+    font-family: "Reem Kufi", serif;
+    font-size: 20px;
+    color:#FFFFFF;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.logo-desc p {
+    font-family: 'Reem Kufi', sans-serif;
+    color:#F3EDC8;
+    letter-spacing: 0;
+    padding-bottom: 50px;
+}
+
+.follow-us p {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #EAD196;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.footer-content h3 {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content li {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color:#EAD196;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #EAD196;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    background-color:#F3EDC8;
+}
+
+.circle img {
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
+.rights-reserved p {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0;
+    margin: 15px;
+}
+
+.right a:hover{
+    color:#F3EDC8;
+}
+
+.middle-left a:hover {
+    color:#F3EDC8;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .follow-us, .footer-help {
+        align-items: center;
+    }
+
+    .footer-help {
+        margin: 0;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}

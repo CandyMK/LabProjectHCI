@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F3EDC8;
+}
+
+* {
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: none;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #7D0A0A;
+    box-shadow: 0px 4px 5.2px 0px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    padding-left: 3em;
+    margin: 0;
+}
+
+.header {
+    display: inline-block;
+    color: #EAD196;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.navbar nav {
+    text-align: right;
+    margin-left: auto;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li {
+    height: 45px;
+}
+
+nav a { 
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+nav a:hover{
+    color: #EAD196;
+}
+
+.contact-form {
+    background: #FFF8DC;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 3px solid #7D0A0A;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.contact-form h1 {
+    font-family: "Port Lligat Slab", serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #EAD196;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#7D0A0A;
+    margin: 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 5px;
+    color:#7D0A0A;
+}
+
+.form-group input, .form-group textarea {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color:#F3EDC8;
+    border: 3px solid #7D0A0A;
+    border-radius: 5px;
+    letter-spacing: 0;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color:#ffffff;
+    border: 3px solid #7D0A0A;
+    border-radius: 5px;
+    letter-spacing: 0;
+}
+
+.form-group p {
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 5px;
+    text-align: end;
+    color:#7D0A0A;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="telp"],
+textarea[id="message"] {
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+
+button {
+    background-color:#7D0A0A;
+    font-family: 'Reem Kufi', sans-serif;
+    color: #FFF8DC;
+    font-size: 18px;
+    letter-spacing: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+}
+
+form button:hover {
+    background-color: #972020;
+}
+
+.footer {
+    background-color: #7D0A0A;
+    box-shadow: 4px 0px 5.2px 5.2px rgba(0, 0, 0, 0.25);
+    padding: 1em 3em;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.left h1 {
+    display: inline;
+    color: #EAD196;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.left {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.right {
+    flex: 1;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+.middle-left {
+    flex: 1;
+    margin: 10px 100px;
+}
+
+.middle-right {
+    flex: 1;
+    margin: 10px 70px;
+}
+
+.left p, .middle-left h3, .middle-right h3, .right p {
+    margin-top: 0;
+}
+
+.left p {
+    font-family: "Port Lligat Slab", serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.right p {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 20px;
+    color:#FFFFFF;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.logo-desc p {
+    font-family: 'Reem Kufi', sans-serif;
+    color:#F3EDC8;
+    letter-spacing: 0;
+    padding-bottom: 50px;
+}
+
+.follow-us p {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #EAD196;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: url("../asset/MagicSpoon-keto-lowcarb-sugarfree-cereal_3.png") no-repeat center center;
+    background-size: cover; 
+    opacity: 0.25;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+.footer-content h3 {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content li {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color:#EAD196;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #EAD196;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    background-color:#F3EDC8;
+}
+
+.circle img {
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
+.rights-reserved p {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0;
+    margin: 15px;
+}
+
+.right a:hover{
+    color:#F3EDC8;
+}
+
+.middle-left a:hover {
+    color:#F3EDC8;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    .item img {
+        max-width: 60px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .follow-us, .footer-help {
+        align-items: center;
+    }
+
+    .footer-help {
+        margin: 0;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}
